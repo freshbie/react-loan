@@ -42,6 +42,7 @@ export const App = () => {
       setFormState(values);
 
       if (isLastStep) {
+        //alert(JSON.stringify(values));
         document.getElementById("loanapp").innerHTML = JSON.stringify(values);
       }
     },
@@ -58,6 +59,7 @@ export const App = () => {
 
   return (
     <div
+      id={"loanapp"}
       style={{
         display: "flex",
         flexDirection: "column",
@@ -70,7 +72,7 @@ export const App = () => {
         onSubmitClick={onStepSubmit}
         render={formRenderProps => (
           <div style={{ alignSelf: "center" }}>
-            <FormElement style={{ width: 600 }}>
+            <FormElement style={{ width: 480 }}>
               {stepPages[step]}
               <span
                 style={{ marginTop: "40px" }}
@@ -83,16 +85,12 @@ export const App = () => {
                 }}
                 className={"k-form-buttons k-buttons-end"}
               >
-                <span style={{ alignSelf: "center", visibility: "hidden" }}>
-                  Step {step + 1} of 3
-                </span>
                 <div>
                   {step !== 0 ? (
                     <Button
                       style={{
                         marginRight: "16px",
-                        backgroundColor: "#BBBB14",
-                        color: "#000000"
+                        backgroundColor: "#BBBB14"
                       }}
                       onClick={onPrevClick}
                     >
