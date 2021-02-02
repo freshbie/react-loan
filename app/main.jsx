@@ -71,7 +71,7 @@ export const App = () => {
         onSubmitClick={onStepSubmit}
         render={formRenderProps => (
           <div style={{ alignSelf: "center" }}>
-            <FormElement style={{ width: 550 }}>
+            <FormElement style={{ width: 600 }}>
               {stepPages[step]}
               <span
                 style={{ marginTop: "40px" }}

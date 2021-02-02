@@ -70,7 +70,7 @@ kendo-sortable {
 }
 
 .k-text-selection ::selection, .k-block ::selection, .k-panel ::selection, .k-pane-wrapper ::selection, .k-view ::selection, .k-progressbar ::selection, .k-numerictextbox ::selection, .k-flatcolorpicker ::selection, .k-combobox ::selection, .k-datepicker ::selection, .k-timepicker ::selection, .k-datetimepicker ::selection, .k-dateinput ::selection, .k-dropdown ::selection, .k-dropdowntree ::selection, .k-multiselect ::selection, .k-maskedtextbox ::selection, .k-rating ::selection, .k-window ::selection, .k-drawer ::selection, .k-notification ::selection, .k-breadcrumb ::selection, .k-pager-wrap ::selection, .k-card ::selection, .k-splitter ::selection, .k-spreadsheet ::selection, .k-scheduler ::selection, .k-chat ::selection, .k-mediaplayer ::selection, .k-pdf-viewer ::selection, kendo-scrollview.k-scrollview-wrap ::selection, .k-scrollview ::selection, .k-chart ::selection, .k-sparkline ::selection, .k-stockchart ::selection {
-    background-color: #007bff;
+    background-color: #00687F;
     color: #ffffff;
 }
 
@@ -14747,7 +14747,7 @@ kendo-label.k-radio-label > .k-label {
 
 .k-progressbar .k-state-selected {
     color: white;
-    background-color: #007bff;
+    background-color: #00687F;
 }
 
 .k-progressbar .k-item {
@@ -14853,7 +14853,7 @@ kendo-label.k-radio-label > .k-label {
 
 .k-messagebox-primary {
     border-color: #b8daff;
-    color: #004085;
+    color: #00687F;
     background-color: #cce5ff;
 }
 
