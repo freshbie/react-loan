@@ -31,8 +31,9 @@ export const LoanDetails = (
       id={"term"}
       name={"term"}
       label={"How much can you regularly repay?"}
-      component={FormDropDownList}
+      component={FormRadioGroup}
       data={cycle}
+      layout={"horizontal"}
       validator={requiredValidator}
     />
     <Field
@@ -70,8 +71,9 @@ export const LoanDetails = (
       id={"income_cycle"}
       name={"income_cycle"}
       label={"Net income after tax"}
-      component={FormDropDownList}
+      component={FormRadioGroup}
       data={cycle}
+      layout={"horizontal"}
     />
     <Field
       key={"income"}
@@ -85,8 +87,9 @@ export const LoanDetails = (
       id={"j_income_cycle"}
       name={"j_income_cycle"}
       label={"Joint applicant's income"}
-      component={FormDropDownList}
+      component={FormRadioGroup}
       data={cycle}
+      layout={"horizontal"}
     />
     <Field
       key={"j_income"}
@@ -163,8 +166,9 @@ export const LoanDetails = (
       id={"rent_cycle"}
       name={"rent_cycle"}
       label={"Mortage/Rent/Board"}
-      component={FormDropDownList}
+      component={FormRadioGroup}
       data={cycle}
+      layout={"horizontal"}
     />
     <Field
       key={"rent"}
@@ -178,8 +182,9 @@ export const LoanDetails = (
       id={"loan_cycle"}
       name={"loan_cycle"}
       label={"Other loans"}
-      component={FormDropDownList}
+      component={FormRadioGroup}
       data={cycle}
+      layout={"horizontal"}
     />
     <Field
       key={"o_loans"}
@@ -193,8 +198,9 @@ export const LoanDetails = (
       id={"Insurances_cycle"}
       name={"Insurances_cycle"}
       label={"Insurances"}
-      component={FormDropDownList}
+      component={FormRadioGroup}
       data={cycle}
+      layout={"horizontal"}
     />
     <Field
       key={"Insurances"}
@@ -208,8 +214,9 @@ export const LoanDetails = (
       id={"cpay_cycle"}
       name={"cpay_cycle"}
       label={"Credit/Store Card Payments"}
-      component={FormDropDownList}
+      component={FormRadioGroup}
       data={cycle}
+      layout={"horizontal"}
     />
     <Field
       key={"cpay"}
@@ -223,8 +230,9 @@ export const LoanDetails = (
       id={"hp_cycle"}
       name={"hp_cycle"}
       label={"Hire Purchase Repayments"}
-      component={FormDropDownList}
+      component={FormRadioGroup}
       data={cycle}
+      layout={"horizontal"}
     />
     <Field
       key={"hpay"}
@@ -238,8 +246,9 @@ export const LoanDetails = (
       id={"Familycare_cycle"}
       name={"Familycare_cycle"}
       label={"Family support or child care"}
-      component={FormDropDownList}
+      component={FormRadioGroup}
       data={cycle}
+      layout={"horizontal"}
     />
     <Field
       key={"familycare"}
@@ -253,8 +262,9 @@ export const LoanDetails = (
       id={"ppp_cycle"}
       name={"ppp_cycle"}
       label={"Power/Phone/Petrol"}
-      component={FormDropDownList}
+      component={FormRadioGroup}
       data={cycle}
+      layout={"horizontal"}
     />
     <Field
       key={"ppp"}
@@ -268,8 +278,9 @@ export const LoanDetails = (
       id={"food_cycle"}
       name={"food_cycle"}
       label={"Food"}
-      component={FormDropDownList}
+      component={FormRadioGroup}
       data={cycle}
+      layout={"horizontal"}
     />
     <Field
       key={"food"}

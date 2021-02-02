@@ -29,8 +29,11 @@ export const emp = [
   { label: "Yes, casual", value: "Yes, casual" },
   { label: "No, unemployed", value: "No, unemployed" }
 ];
-
-export const cycle = ["Weekly", "Fornightly", "Monthly"];
+export const cycle = [
+  { label: "Weekly", value: "Weekly" },
+  { label: "Fortnightly", value: "Fortnightly" },
+  { label: "Monthly", value: "Monthly" }
+];
 
 export const purpose = [
   "Car Purchase",
