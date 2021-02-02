@@ -42,7 +42,6 @@ export const App = () => {
       setFormState(values);
 
       if (isLastStep) {
-        //alert(JSON.stringify(values));
         document.getElementById("loanapp").innerHTML = JSON.stringify(values);
       }
     },
