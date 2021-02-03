@@ -61,40 +61,24 @@ export const LoanDetails = (
     />
     <br />
     <p>
-      <b>Please fill in the table below</b>
+      <b>Please fill in the details below</b>
     </p>
     <p>
-      <b>Income</b>
+      <b>Income (Monthly)</b>
     </p>
-    <Field
-      key={"income_cycle"}
-      id={"income_cycle"}
-      name={"income_cycle"}
-      label={"Net income after tax"}
-      component={FormRadioGroup}
-      data={cycle}
-      layout={"horizontal"}
-    />
     <Field
       key={"income"}
       id={"income"}
       name={"income"}
+      label={"Net income after tax"}
       placeholder={"Amount $"}
       component={FormInput}
-    />
-    <Field
-      key={"j_income_cycle"}
-      id={"j_income_cycle"}
-      name={"j_income_cycle"}
-      label={"Joint applicant's income"}
-      component={FormRadioGroup}
-      data={cycle}
-      layout={"horizontal"}
     />
     <Field
       key={"j_income"}
       id={"j_income"}
       name={"j_income"}
+      label={"Joint applicant's income after tax"}
       placeholder={"Amount $"}
       component={FormInput}
     />
@@ -118,7 +102,7 @@ export const LoanDetails = (
       id={"a_home"}
       name={"a_home"}
       label={"Home"}
-      placeholder={"Estimated Value $"}
+      placeholder={"Amount $"}
       component={FormInput}
     />
     <Field
@@ -126,7 +110,7 @@ export const LoanDetails = (
       id={"a_household"}
       name={"a_household"}
       label={"Household Contents"}
-      placeholder={"Estimated Value $"}
+      placeholder={"Amount $"}
       component={FormInput}
     />
     <Field
@@ -134,7 +118,7 @@ export const LoanDetails = (
       id={"a_motor"}
       name={"a_motor"}
       label={"Motor Vehicle/s"}
-      placeholder={"Estimated Value $"}
+      placeholder={"Amount $"}
       component={FormInput}
     />
     <Field
@@ -142,7 +126,7 @@ export const LoanDetails = (
       id={"a_savings"}
       name={"a_savings"}
       label={"Savings"}
-      placeholder={"Estimated Value $"}
+      placeholder={"Amount $"}
       component={FormInput}
     />
     <br />
@@ -153,139 +137,75 @@ export const LoanDetails = (
       key={"t_assets"}
       id={"t_assets"}
       name={"t_assets"}
-      placeholder={"Estimated Value $"}
-      placeholder={"Estimated Value $"}
+      placeholder={"Amount $"}
+      placeholder={"Amount $"}
       component={FormInput}
     />
     <br />
     <p>
-      <b>Expenditure</b>
+      <b>Expenditure (Monthly)</b>
     </p>
-    <Field
-      key={"rent_cycle"}
-      id={"rent_cycle"}
-      name={"rent_cycle"}
-      label={"Mortage/Rent/Board"}
-      component={FormRadioGroup}
-      data={cycle}
-      layout={"horizontal"}
-    />
     <Field
       key={"rent"}
       id={"rent"}
       name={"rent"}
+      label={"Mortage/Rent/Board"}
       placeholder={"Amount $"}
       component={FormInput}
-    />
-    <Field
-      key={"loan_cycle"}
-      id={"loan_cycle"}
-      name={"loan_cycle"}
-      label={"Other loans"}
-      component={FormRadioGroup}
-      data={cycle}
-      layout={"horizontal"}
     />
     <Field
       key={"o_loans"}
       id={"o_loans"}
       name={"o_loans"}
+      label={"Other loans"}
       placeholder={"Amount $"}
       component={FormInput}
-    />
-    <Field
-      key={"Insurances_cycle"}
-      id={"Insurances_cycle"}
-      name={"Insurances_cycle"}
-      label={"Insurances"}
-      component={FormRadioGroup}
-      data={cycle}
-      layout={"horizontal"}
     />
     <Field
       key={"Insurances"}
       id={"Insurances"}
       name={"Insurances"}
+      label={"Insurances"}
       placeholder={"Amount $"}
       component={FormInput}
-    />
-    <Field
-      key={"cpay_cycle"}
-      id={"cpay_cycle"}
-      name={"cpay_cycle"}
-      label={"Credit/Store Card Payments"}
-      component={FormRadioGroup}
-      data={cycle}
-      layout={"horizontal"}
     />
     <Field
       key={"cpay"}
       id={"cpay"}
       name={"cpay"}
+      label={"Credit/Store Card Payments"}
       placeholder={"Amount $"}
       component={FormInput}
-    />
-    <Field
-      key={"hp_cycle"}
-      id={"hp_cycle"}
-      name={"hp_cycle"}
-      label={"Hire Purchase Repayments"}
-      component={FormRadioGroup}
-      data={cycle}
-      layout={"horizontal"}
     />
     <Field
       key={"hpay"}
       id={"hpay"}
       name={"hpay"}
+      label={"Hire Purchase Repayments"}
       placeholder={"Amount $"}
       component={FormInput}
-    />
-    <Field
-      key={"Familycare_cycle"}
-      id={"Familycare_cycle"}
-      name={"Familycare_cycle"}
-      label={"Family support or child care"}
-      component={FormRadioGroup}
-      data={cycle}
-      layout={"horizontal"}
     />
     <Field
       key={"familycare"}
       id={"familycare"}
       name={"familycare"}
+      label={"Family support or child care"}
       placeholder={"Amount $"}
       component={FormInput}
-    />
-    <Field
-      key={"ppp_cycle"}
-      id={"ppp_cycle"}
-      name={"ppp_cycle"}
-      label={"Power/Phone/Petrol"}
-      component={FormRadioGroup}
-      data={cycle}
-      layout={"horizontal"}
     />
     <Field
       key={"ppp"}
       id={"ppp"}
       name={"ppp"}
+      label={"Power/Phone/Petrol"}
       placeholder={"Amount $"}
       component={FormInput}
-    />
-    <Field
-      key={"food_cycle"}
-      id={"food_cycle"}
-      name={"food_cycle"}
-      label={"Food"}
-      component={FormRadioGroup}
-      data={cycle}
-      layout={"horizontal"}
     />
     <Field
       key={"food"}
       id={"food"}
       name={"food"}
+      label={"Food"}
       placeholder={"Amount $"}
       component={FormInput}
     />
@@ -309,7 +229,7 @@ export const LoanDetails = (
       id={"a_firstmortage"}
       name={"a_firstmortage"}
       label={"First Mortgage"}
-      placeholder={"Estimated Value $"}
+      placeholder={"Amount $"}
       component={FormInput}
     />
     <Field
@@ -317,7 +237,7 @@ export const LoanDetails = (
       id={"a_motorvehicle"}
       name={"a_motorvehicle"}
       label={"Motor Vehicles"}
-      placeholder={"Estimated Value $"}
+      placeholder={"Amount $"}
       component={FormInput}
     />
     <Field
@@ -325,7 +245,7 @@ export const LoanDetails = (
       id={"a_over"}
       name={"a_over"}
       label={"Overdrafts"}
-      placeholder={"Estimated Value $"}
+      placeholder={"Amount $"}
       component={FormInput}
     />
     <Field
@@ -333,7 +253,7 @@ export const LoanDetails = (
       id={"a_cc"}
       name={"a_cc"}
       label={"Credit Card Debt"}
-      placeholder={"Estimated Value $"}
+      placeholder={"Amount $"}
       component={FormInput}
     />
     <Field
@@ -341,7 +261,7 @@ export const LoanDetails = (
       id={"a_store"}
       name={"a_store"}
       label={"Store cards/Hire purchases"}
-      placeholder={"Estimated Value $"}
+      placeholder={"Amount $"}
       component={FormInput}
     />
     <Field
@@ -349,7 +269,7 @@ export const LoanDetails = (
       id={"a_student"}
       name={"a_student"}
       label={"Student Loan"}
-      placeholder={"Estimated Value $"}
+      placeholder={"Amount $"}
       component={FormInput}
     />
     <Field
@@ -357,7 +277,7 @@ export const LoanDetails = (
       id={"a_personal"}
       name={"a_personal"}
       label={"Personal Loan/s"}
-      placeholder={"Estimated Value $"}
+      placeholder={"Amount $"}
       component={FormInput}
     />
     <br />
@@ -368,8 +288,8 @@ export const LoanDetails = (
       key={"t_liabilities"}
       id={"t_liabilities"}
       name={"t_liabilities"}
-      placeholder={"Estimated Value $"}
-      placeholder={"Estimated Value $"}
+      placeholder={"Amount $"}
+      placeholder={"Amount $"}
       component={FormInput}
     />
     <br />
