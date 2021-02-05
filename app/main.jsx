@@ -6,16 +6,23 @@ import { Button } from "@progress/kendo-react-buttons";
 import { Stepper } from "@progress/kendo-react-layout";
 
 import { AccountDetails } from "./account-details.jsx";
+import { JointAccountDetails } from "./joint-applicant.jsx";
 import { LoanDetails } from "./loan-details.jsx";
 import { SecurityDetails } from "./security-details.jsx";
 
-const stepPages = [AccountDetails, LoanDetails, SecurityDetails];
+const stepPages = [
+  AccountDetails,
+  JointAccountDetails,
+  LoanDetails,
+  SecurityDetails
+];
 
 export const App = () => {
   const [step, setStep] = React.useState(0);
   const [formState, setFormState] = React.useState({});
   const [steps, setSteps] = React.useState([
     { label: "Personal", isValid: undefined },
+    { label: "Joint Applicant", isValid: undefined },
     { label: "Loan", isValid: undefined },
     { label: "Security", isValid: undefined }
   ]);

@@ -122,6 +122,14 @@ export const AccountDetails = (
       id={"driverlicence"}
       name={"driverlicence"}
       label={"What is your Driver Licence Number ?"}
+      placeholder={"Number"}
+      component={FormInput}
+    />
+    <Field
+      key={"driverlicence_ver"}
+      id={"driverlicence_ver"}
+      name={"driverlicence_ver"}
+      placeholder={"Version"}
       component={FormInput}
     />
     <Field
