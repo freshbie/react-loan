@@ -10,7 +10,12 @@ import { JointAccountDetails } from "./joint-applicant.jsx";
 import { LoanDetails } from "./loan-details.jsx";
 import { SecurityDetails } from "./security-details.jsx";
 
-const stepPages = [AccountDetails, JointAccountDetails, LoanDetails, SecurityDetails];
+const stepPages = [
+  AccountDetails,
+  JointAccountDetails,
+  LoanDetails,
+  SecurityDetails
+];
 
 export const App = () => {
   const [step, setStep] = React.useState(0);
