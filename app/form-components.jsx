@@ -192,6 +192,7 @@ export const FormCheckbox = fieldRenderProps => {
         labelOptional={optional}
         valid={valid}
         id={id}
+        style={{ backgroundColor: "#f2f5f4", color: "#00687F" }}
         disabled={disabled}
         {...others}
       />
