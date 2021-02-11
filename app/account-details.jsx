@@ -122,10 +122,20 @@ export const AccountDetails = (
       data={resident}
     />
     <Field
+      key={"children"}
+      id={"children"}
+      name={"children"}
+      label={"How many dependent children do you have ?"}
+      component={FormInput}
+    />
+    <br />
+    <p>
+      <b>Driver Licence Details</b>
+    </p>
+    <Field
       key={"driverlicence"}
       id={"driverlicence"}
       name={"driverlicence"}
-      label={"What is your Driver Licence Number ?"}
       placeholder={"Number"}
       component={FormInput}
     />
@@ -161,13 +171,7 @@ export const AccountDetails = (
       component={FormRadioGroup}
       data={lihold}
     />
-    <Field
-      key={"children"}
-      id={"children"}
-      name={"children"}
-      label={"How many dependent children do you have ?"}
-      component={FormInput}
-    />
+    <br />
     <p>
       <b>Employment Details</b>
     </p>

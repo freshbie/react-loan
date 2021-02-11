@@ -2,7 +2,11 @@ import * as React from "react";
 
 import { Field } from "@progress/kendo-react-form";
 
-import { FormInput, FormRadioGroup } from "./form-components.jsx";
+import {
+  FormInput,
+  FormRadioGroup,
+  FormDropDownList
+} from "./form-components.jsx";
 
 import {
   userNameValidator,
@@ -72,7 +76,7 @@ export const JointAccountDetails = (
       id={"j_email"}
       name={"j_email"}
       label={"Email"}
-      hint={"Hint: Enter your personal email address."}
+      placeholder={"Enter your personal email address."}
       type={"email"}
       component={FormInput}
     />
@@ -81,21 +85,21 @@ export const JointAccountDetails = (
       id={"j_Address"}
       name={"j_Address"}
       label={"What is your Home Address ?"}
-      hint={"Street"}
+      placeholder={"Street"}
       component={FormInput}
     />
     <Field
       key={"j_suburb"}
       id={"j_suburb"}
       name={"j_suburb"}
-      hint={"Suburb"}
+      placeholder={"Suburb"}
       component={FormInput}
     />
     <Field
       key={"j_postcode"}
       id={"j_postcode"}
       name={"j_postcode"}
-      hint={"Post Code"}
+      placeholder={"Post Code"}
       component={FormInput}
     />
     <Field
@@ -108,10 +112,20 @@ export const JointAccountDetails = (
       data={resident}
     />
     <Field
+      key={"j_children"}
+      id={"j_children"}
+      name={"j_children"}
+      label={"How many dependent children do you have ?"}
+      component={FormInput}
+    />
+    <br />
+    <p>
+      <b>Driver Licence Details</b>
+    </p>
+    <Field
       key={"j_driverlicence"}
       id={"j_driverlicence"}
       name={"j_driverlicence"}
-      label={"What is your Driver Licence Number ?"}
       placeholder={"Number"}
       component={FormInput}
     />
@@ -123,6 +137,22 @@ export const JointAccountDetails = (
       component={FormInput}
     />
     <Field
+      key={"j_driverlicence_eff"}
+      id={"j_driverlicence_eff"}
+      name={"j_driverlicence_eff"}
+      component={FormInput}
+      label={"Effective"}
+      type={"date"}
+    />
+    <Field
+      key={"j_driverlicence_exp"}
+      id={"j_driverlicence_exp"}
+      name={"j_driverlicence_exp"}
+      component={FormInput}
+      label={"Expiry"}
+      type={"date"}
+    />
+    <Field
       key={"j_lihold"}
       id={"j_lihold"}
       name={"j_lihold"}
@@ -131,20 +161,16 @@ export const JointAccountDetails = (
       component={FormRadioGroup}
       data={lihold}
     />
-    <Field
-      key={"j_children"}
-      id={"j_children"}
-      name={"j_children"}
-      label={"How many dependent children do you have ?"}
-      component={FormInput}
-    />
+    <br />
+    <p>
+      <b>Employment Details</b>
+    </p>
     <Field
       key={"j_emp"}
       id={"j_emp"}
       name={"j_emp"}
       label={"Are you employed ?"}
-      layout={"horizontal"}
-      component={FormRadioGroup}
+      component={FormDropDownList}
       data={emp}
     />
     <Field
@@ -159,21 +185,21 @@ export const JointAccountDetails = (
       id={"j_employer"}
       name={"j_employer"}
       label={"Who is your employer ?"}
-      hint={"Employeer Name"}
+      placeholder={"Employeer Name"}
       component={FormInput}
     />
     <Field
       key={"j_employer_address"}
       id={"j_employer_address"}
       name={"j_employer_address"}
-      hint={"Employer Address"}
+      placeholder={"Employer Address"}
       component={FormInput}
     />
     <Field
-      key={"j_employer_suburb"}
-      id={"j_employer_suburb"}
-      name={"j_employer_suburb"}
-      hint={"Employer Suburb"}
+      key={"j_employer_industry"}
+      id={"j_employer_industry"}
+      name={"j_employer_industry"}
+      placeholder={"Employer Industry"}
       component={FormInput}
     />
     <Field
@@ -181,6 +207,14 @@ export const JointAccountDetails = (
       id={"j_emp_duration"}
       name={"j_emp_duration"}
       label={"How long have you been employed there ?"}
+      component={FormInput}
+      type={"date"}
+    />
+    <Field
+      key={"j_Hours_per_week"}
+      id={"j_Hours_per_week"}
+      name={"j_Hours_per_week"}
+      label={"Hour Per Week"}
       component={FormInput}
     />
   </div>
