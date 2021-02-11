@@ -23,11 +23,11 @@ export const lihold = [
   { label: "Full", value: "Full" }
 ];
 export const emp = [
-  { label: "Yes, full time", value: "Yes, full time" },
-  { label: "Yes, part time", value: "Yes, part time" },
-  { label: "Yes, self employed", value: "Yes, self employed" },
-  { label: "Yes, casual", value: "Yes, casual" },
-  { label: "No, unemployed", value: "No, unemployed" }
+  "Yes, full time",
+  "Yes, part time",
+  "Yes, self employed",
+  "Yes, casual",
+  "No, unemployed"
 ];
 export const cycle = [
   { label: "Weekly", value: "Weekly" },

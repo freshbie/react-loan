@@ -2,7 +2,11 @@ import * as React from "react";
 
 import { Field } from "@progress/kendo-react-form";
 
-import { FormInput, FormRadioGroup } from "./form-components.jsx";
+import {
+  FormInput,
+  FormRadioGroup,
+  FormDropDownList
+} from "./form-components.jsx";
 
 import {
   userNameValidator,
@@ -28,7 +32,7 @@ export const AccountDetails = (
       id={"member_no"}
       name={"member_no"}
       label={"Member Number"}
-      hint={"If Known"}
+      placeholder={"If Known"}
       component={FormInput}
     />
     <Field
@@ -67,7 +71,7 @@ export const AccountDetails = (
       id={"email"}
       name={"email"}
       label={"Email"}
-      hint={"Hint: Enter your personal email address."}
+      placeholder={" Enter your personal email address."}
       type={"email"}
       component={FormInput}
     />
@@ -76,21 +80,21 @@ export const AccountDetails = (
       id={"Address"}
       name={"Address"}
       label={"What is your Home Address ?"}
-      hint={"Street"}
+      placeholder={"Street"}
       component={FormInput}
     />
     <Field
       key={"suburb"}
       id={"suburb"}
       name={"suburb"}
-      hint={"Suburb"}
+      placeholder={"Suburb"}
       component={FormInput}
     />
     <Field
       key={"postcode"}
       id={"postcode"}
       name={"postcode"}
-      hint={"Post Code"}
+      placeholder={"Post Code"}
       component={FormInput}
     />
     <Field
@@ -98,14 +102,14 @@ export const AccountDetails = (
       id={"phone"}
       name={"phone"}
       label={"What are your phone numbers ? (Please provide atleast two)"}
-      hint={"Hint: Your personal number"}
+      placeholder={" Your personal number"}
       component={FormInput}
     />
     <Field
       key={"a_phone"}
       id={"a_phone"}
       name={"a_phone"}
-      hint={"Hint: Your Home or Work number"}
+      placeholder={" Your Home or Work number"}
       component={FormInput}
     />
     <Field
@@ -133,6 +137,22 @@ export const AccountDetails = (
       component={FormInput}
     />
     <Field
+      key={"driverlicence_eff"}
+      id={"driverlicence_eff"}
+      name={"driverlicence_eff"}
+      component={FormInput}
+      label={"Effective"}
+      type={"date"}
+    />
+    <Field
+      key={"driverlicence_exp"}
+      id={"driverlicence_exp"}
+      name={"driverlicence_exp"}
+      component={FormInput}
+      label={"Expiry"}
+      type={"date"}
+    />
+    <Field
       key={"lihold"}
       id={"lihold"}
       name={"lihold"}
@@ -148,13 +168,15 @@ export const AccountDetails = (
       label={"How many dependent children do you have ?"}
       component={FormInput}
     />
+    <p>
+      <b>Employment Details</b>
+    </p>
     <Field
       key={"emp"}
       id={"emp"}
       name={"emp"}
       label={"Are you employed ?"}
-      layout={"horizontal"}
-      component={FormRadioGroup}
+      component={FormDropDownList}
       data={emp}
     />
     <Field
@@ -169,21 +191,21 @@ export const AccountDetails = (
       id={"employer"}
       name={"employer"}
       label={"Who is your employer ?"}
-      hint={"Employeer Name"}
+      placeholder={"Employeer Name"}
       component={FormInput}
     />
     <Field
       key={"employer_address"}
       id={"employer_address"}
       name={"employer_address"}
-      hint={"Employer Address"}
+      placeholder={"Employer Address"}
       component={FormInput}
     />
     <Field
-      key={"employer_suburb"}
-      id={"employer_suburb"}
-      name={"employer_suburb"}
-      hint={"Employer Suburb"}
+      key={"employer_industry"}
+      id={"employer_industry"}
+      name={"employer_industry"}
+      placeholder={"Employer Industry"}
       component={FormInput}
     />
     <Field
@@ -191,6 +213,14 @@ export const AccountDetails = (
       id={"emp_duration"}
       name={"emp_duration"}
       label={"How long have you been employed there ?"}
+      component={FormInput}
+      type={"date"}
+    />
+    <Field
+      key={"Hours_per_week"}
+      id={"Hours_per_week"}
+      name={"Hours_per_week"}
+      label={"Hour Per Week"}
       component={FormInput}
     />
   </div>
